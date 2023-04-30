@@ -26,7 +26,7 @@ def whatsapp():
         ride_time = incoming_msg.split(":")[1].strip()
         
         # Make a request to Namma Yatri API to book the ride
-        api_key = "YOUR_NAMMA_YATRI_API_KEY"
+        api_key = "NAMMA_YATRI_API_KEY"
         api_url = f"https://api.nammayatri.com/v1/rides/book?key={api_key}"
         payload = {
             "pickup_location": pickup_location,
